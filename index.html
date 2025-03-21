@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+          <div class="logo">
+            <a href="#">W-Arias</a>
+          </div>
+            <nav id="nav">
+                <ul>
+                   <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                   <li><a href="#quien-soy" onclick="seleccionar()">Quien Soy</a></li>
+                   <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                   <li><a href="#curriculum" onclick="seleccionar()">Curricullum</a></li>
+                   <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                   <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/retrato1.png" alt="">
+            </div>
+            <h1>Wilber Arias</h1>
+            <h2>Desarrollador Web Full Stack "En Progreso"</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>   
+        </div>
+    </section>
+
+    <!--Seccion Sobre quien Soy-->
+    <section id="quien-soy" class="quien-soy">
+        <div class="contenido-seccion">
+            <h2>Quien Soy</h2>
+            <p><span>Hola, Soy Wilber Arias.</span>aca toda la historia que vaya a poner</p>
+
+            <div class="fila">
+                <!-- Datos Personales  -->
+                 <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            25-01-1993
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +57 313 621 7089
+                        </li>
+                        <li>
+                            <strong>Correo </strong>
+                            Wilberarias26@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Web Junior</span>
+                        </li>
+                    </ul>
+                 </div>
+
+                 <!-- Intereses -->
+                  <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-burger"></i>
+                            <span>Comer</span>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+                <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+
+    <!-- Seccion Skill-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--technical skill-->
+                <div class="col">
+                    <h3>Habilidad Técnica</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>2%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>4%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional Skill-->
+                <div class="col">
+                    <h3>Habilidad Profesional</h3>
+                    <div class="skill">
+                        <span>Cominicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso habilidad">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h3>Mantenimiento y Ensamble de Equipos de Computo </h3>
+                        <span class="casa">SENA en convenio con PRESENCIA Colombo Suiza </span>
+                        <span class="fecha">2010 - 2011</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h3>Mantenimiento y Ensamble de Equipos de Computo </h3>
+                        <span class="casa">SENA en convenio con PRESENCIA Colombo Suiza </span>
+                        <span class="fecha">2010 - 2011</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Expeirencia Laboral</h3>
+                    <div class="item der">
+                        <h3>Técnico en Sistemas </h3>
+                        <span class="casa"> INFORMATICA Y REDES S.A.S </span>
+                        <span class="fecha">Actual mente laborando desde el 2018</span>
+                        <p>Funciones: Realizar mantenimientos físicos y lógicos 
+                            a los equipos de cómputo de las notarías y empresas, 
+                            brindar soporte vía telefónica y remota mente, se le 
+                            brinda asistencia en el sitio a los usuarios, instalación 
+                            de redes LAN y cableado estructurado, configuración de Reuters, 
+                            Instalación de Cámaras de seguridad, copias de seguridad a 
+                            empresas e instalación de programas solicitados, administración 
+                            y diseño de páginas web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h3>Jefe de sistemas </h3>
+                        <span class="casa">PROPYMEX S.A.S</span>
+                        <span class="fecha">2016</span>
+                        <p> Funciones: Estar pendiente del funcionamiento 
+                            de los equipos y del servidor de la empresa, 
+                            configuración de dispositivos de red, compra de equipos 
+                            de cómputo y licencias de los distintos programas que se 
+                            manejan en la empresa, administración del servidor de correos 
+                            y de la página web de la empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h3>Operador central de Monitoreo </h3>
+                        <span class="casa">SATRAK INC DE COLOMBIA SERVISAT S.A </span>
+                        <span class="fecha">2014 - 2015</span>
+                        <p> Funciones: Informa a los clientes de la empresa a sobre 
+                            las alarmas generados por los vehículos que cuentas con 
+                            el sistema de monitoreo satelital, brindarles información 
+                            sobre la ubicación la velocidad las paradas realizadas de 
+                            los vehículos y demás información que solicite el cliente, 
+                            realizarles seguimientos personalizados a los vehículos que 
+                            realizan viajes con mercancía delicada y brindarles apoyo con 
+                            las autoridades en caso de algún hurto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h3>Encargado del área de sistemas </h3>
+                        <span class="casa">ESCUELA DE DISEÑO ESDITEC  </span>
+                        <span class="fecha">2012 - 2013</span>
+                        <p> Funciones: Mantener las salas de sistemas y equipos 
+                            de las oficinas en óptimas condiciones para garantizar 
+                            su buen funcionamiento. Brindar soporte técnico a los 
+                            estudiantes y docentes de la escuela. Mantener las salas 
+                            de cómputo y dispositivos de red en óptimas condiciones 
+                            para garantizar la conectividad entre los equipos y el servidor 
+                            de licencias de la escuela. Los principales logros fueron concernientes 
+                            a la implementación de nuevos sistemas para mejorar el funcionamiento 
+                            de los equipos de las salas de cómputo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Seccion Contacto-->
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                
+                    <!--formulario-->
+                    <div class="col">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Numero de Telefono">
+                        <input type="text" placeholder="Correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!--Mapa-->
+                    <div class="col">
+                        <img src="img/ubicacion.PNG" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Calle 60# 74a-114, Medellin
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    Celular: 313 621 7089
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: wilberarias26@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+     </section>
+     <!-- Pie de Pagina-->
+      <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
